@@ -44,7 +44,6 @@ public class AnnotationParser {
                 binder.addAll(recurse_parse(parent));
             }
             AnnotationBinder a = new AnnotationBinder(target, getClassAnnotations(target));
-            System.out.println(a.getElement() + " / " + a.getAnnotations());
             binder.add(a);
             binder.addAll(getClassMethodsAnnotations(target));
             binder.addAll(getClassFieldsAnnotations(target));
@@ -59,7 +58,6 @@ public class AnnotationParser {
         if(target != null)
         {
             annotations = target.getAnnotations();
-            System.out.println( annotations.length);
             if(annotations != null)
             {
                 output.addAll(Arrays.asList(annotations));
@@ -74,7 +72,6 @@ public class AnnotationParser {
         if(target != null)
         {
             annotations = target.getAnnotations();
-            System.out.println( annotations.length);
             if(annotations != null)
             {
                 output.addAll(Arrays.asList(annotations));
@@ -103,7 +100,6 @@ public class AnnotationParser {
         if(target != null)
         {
             annotations = target.getAnnotations();
-            System.out.println( annotations.length);
             if(annotations != null)
             {
                 output.addAll(Arrays.asList(annotations));

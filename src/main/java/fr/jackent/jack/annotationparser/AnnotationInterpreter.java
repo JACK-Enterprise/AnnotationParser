@@ -22,9 +22,7 @@ public class AnnotationInterpreter {
     public void run() {
         if(objectBinders != null && functionBinders != null)
         {   
-            System.out.println("1st");
             for (AnnotationBinder objectBinder : objectBinders) {
-                System.out.println("2nd");
                 parseAndRunElement(objectBinder);
             }
         }
@@ -35,9 +33,7 @@ public class AnnotationInterpreter {
             List<Annotation> annotations = objectBinder.getAnnotations();
             AnnotatedElement targetElement = objectBinder.getElement();
             if(annotations != null) {
-                System.out.println("3rd");
                 for(Annotation annotation : annotations) {
-                    System.out.println("4th");
                     findMatchingAnnotationAndRun(targetElement, annotation);
                 }
             }
