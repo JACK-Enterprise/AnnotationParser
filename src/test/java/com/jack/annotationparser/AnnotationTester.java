@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.jack;
+package com.jack.annotationparser;
 
 import lombok.Getter;
 import lombok.Setter;

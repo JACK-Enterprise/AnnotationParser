@@ -1,4 +1,4 @@
-package com.jack;
+package com.jack.annotationparser;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
