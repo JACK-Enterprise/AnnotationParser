@@ -5,12 +5,15 @@
  */
 package fr.jackent.jack.annotationparser;
 
-import java.lang.annotation.Annotation;
+import lombok.Getter;
+import lombok.Setter;
 
 /**
  *
  * @author Aurelien
  */
-public @interface AnnotationFunctionBinderInterface {
-
+public class AnnotationTester {
+        public static boolean classTester = false;
+        public static boolean methodTester = false;
+        public static boolean fieldTester = false;
 }

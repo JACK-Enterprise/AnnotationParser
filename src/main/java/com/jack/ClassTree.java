@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.jackent.jack.annotationparser;
+package com.jack;
 
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- *
+ * Entity class that stores dependency tree of a given class
  * @author Aurelien
  */
 @AllArgsConstructor

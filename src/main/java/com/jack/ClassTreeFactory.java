@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.jackent.jack.annotationparser;
+package com.jack;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,9 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 
 /**
- *
+ * Factory that parses a ClassTree object by 
+ * 
+ * @see ClassTree
  * @author Aurelien
  */
 @AllArgsConstructor

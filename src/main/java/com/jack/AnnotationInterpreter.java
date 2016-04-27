@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.jackent.jack.annotationparser;
+package com.jack;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
@@ -11,7 +11,8 @@ import java.util.List;
 import lombok.AllArgsConstructor;
 
 /**
- *
+ * Annotation interpreter that runs annotated code on given class(es)
+ * 
  * @author Aurelien
  */
 @AllArgsConstructor
@@ -19,6 +20,29 @@ public class AnnotationInterpreter {
     private List<AnnotationBinder> objectBinders;
     private List<AnnotationFunctionBinder> functionBinders;
     
+    /**
+     * Adds an AnnotationBinder object to current interpreter context
+     * 
+     * @see AnnotationBinder
+     * @param binder 
+     */
+    public void addAnnotationBinder (AnnotationBinder binder) {
+        objectBinders.add(binder);
+    }
+    
+    /**
+     * Adds an AnnotationFunctionBinder object to current interpreter context
+     * 
+     * @see AnnotationFunctionBinder
+     * @param binder 
+     */
+    public void addAnnotationFunctionBinder (AnnotationFunctionBinder binder) {
+        functionBinders.add(binder);
+    }
+    
+    /**
+     * Runs the interpreter with its current context
+     */
     public void run() {
         if(objectBinders != null && functionBinders != null)
         {   

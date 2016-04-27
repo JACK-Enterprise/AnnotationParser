@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package fr.jackent.jack.annotationparser;
+package com.jack;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AnnotatedElement;
@@ -12,7 +12,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- *
+ * Binder that links reflected elements (methods / classes / fields)
+ * with their annotations.
  * @author Aurelien
  */
 @AllArgsConstructor
